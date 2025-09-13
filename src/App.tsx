@@ -21,6 +21,7 @@ import Layout from './components/Layout/Layout';
 
 // Pages
 import Dashboard from './pages/Dashboard/Dashboard';
+import ConfigurazionePage from './pages/Configurazione/ConfigurazionePage';
 import IngressiPage from './pages/Ingressi/IngressiPage';
 import LavorazioniPage from './pages/Lavorazioni/LavorazioniPage';
 import UscitePage from './pages/Uscite/UscitePage';
@@ -126,6 +127,7 @@ function App() {
               <Route path="/" element={<Layout />}>
                 <Route index element={<Navigate to="/dashboard" replace />} />
                 <Route path="dashboard" element={<Dashboard />} />
+                <Route path="configurazione" element={<ConfigurazionePage />} />
                 <Route path="ingressi" element={<IngressiPage />} />
                 <Route path="lavorazioni" element={<LavorazioniPage />} />
                 <Route path="uscite" element={<UscitePage />} />

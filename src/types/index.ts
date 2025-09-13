@@ -35,9 +35,9 @@ export interface FlussoCorepla extends BaseEntity {
   nome: string;
   descrizione?: string;
   corrispettivo_unitario: number;
-  limite_traccianti?: number;
-  limite_frazione_estranea?: number;
-  limite_cpl?: number;
+  limite_traccianti?: number |'' | null,
+  limite_frazione_estranea?: number |'' | null;
+  limite_cpl?: number |'' | null;
   attivo: boolean;
 }
 

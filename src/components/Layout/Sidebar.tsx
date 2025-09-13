@@ -37,6 +37,11 @@ const menuItems = [
     path: '/dashboard',
   },
   {
+  text: 'Configurazione',
+  path: '/configurazione', 
+  icon: <SettingsIcon />  // o l'icona che preferisci
+  },
+  {
     text: 'Ingressi',
     icon: <InputIcon />,
     path: '/ingressi',
